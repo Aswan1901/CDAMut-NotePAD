@@ -5,12 +5,23 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NoteListActivity">
+    tools:context=".NoteDetailsActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/note_recycler_view"
+
+<EditText
+        android:id="@+id/title"
+        style="@style/TitleFont"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_note"
+        android:hint="Le super titre de ma note"
+        />
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:hint="Details de ma note"
+        style="@style/TextFontNoteDetail"
         />
 </RelativeLayout>
